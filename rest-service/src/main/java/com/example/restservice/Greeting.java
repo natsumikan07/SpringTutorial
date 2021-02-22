@@ -1,21 +1,23 @@
 package com.example.restservice;
 
 public class Greeting {
-	private int id;
-	private String name;
+	//Long型のid。
+	//contet。
+	private Long id;
+	private String content;
 
-	//セッター
-	public void setGreeting(int id, String name) {
+	//コンストラクタ
+	public Greeting(Long id, String name) {
 		this.id = id;
-		this.name = name;
+		this.content = name;
 	}
 
 	//ゲッター
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
 	public String getName() {
-		return name;
+		return content;
 	}
 }
